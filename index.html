@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute-Page</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a;
+            color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .navbar {
+            background-color: #444;
+            padding: 15px 0;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .navbar ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            color: #f4f4f4;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        #header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        #title {
+            font-size: 2.5em;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        #intro-paragraph {
+            line-height: 1.8;
+            margin-right: 20px;
+            max-width: 60%;
+            text-align: justify;
+        }
+
+        .img {
+            text-align: center;
+            margin: 0;
+            flex-shrink: 0;
+        }
+
+        .img img {
+            max-width: 400px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .glowing-card {
+            background-color: #222;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: justify;
+        }
+
+        .glowing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.7);
+        }
+
+        .section-title {
+            font-size: 2em;
+            color: #fff;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #00cccc;
+            padding-bottom: 5px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #00cccc;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .gallery-card {
+            background-color: #222;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery-card img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+        }
+
+        .gallery-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.7);
+        }
+
+        .gallery-card:hover img {
+            transform: scale(1.1);
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Biography</a></li>
+                <li><a href="#">Achievements</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Legacy</a></li>
+            </ul>
+        </div>
+
+        <div id="header-content">
+            <div id="text-content">
+                <h1 id="title">MS Dhoni - The Legend, The Myth</h1>
+                <p id="intro-paragraph">
+                    Mahendra Singh Dhoni, often hailed as one of the greatest cricket captains, led India to numerous victories, including the 2007 T20 World Cup and the 2011 ICC World Cup. Known for his calm demeanor and exceptional finishing skills, Dhoni's legacy extends beyond his records, inspiring millions with his leadership and sportsmanship.
+                </p>
+            </div>
+
+            <div class="img">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.vqKmuMhOddIaEICAJ9amiwHaEK&pid=Api&P=0&h=220" alt="MS Dhoni">
+            </div>
+        </div>
+
+        <div class="glowing-card">
+            <h1 class="section-title">Biography: Mahendra Singh Dhoni</h1>
+            <p>
+                Born on July 7, 1981, in Ranchi, Jharkhand, India, Dhoni emerged from humble beginnings to become a sports icon. Initially a goalkeeper in football, his transition to cricket as a wicketkeeper-batsman marked the beginning of a remarkable journey in Indian cricket.
+            </p>
+            <p>
+                Dhoni’s cricketing prowess and leadership skills became evident as he led India to numerous historic victories. His calm and strategic mindset under pressure earned him the nickname "Captain Cool," and his influence on the game has been profound and lasting.
+            </p>
+        </div>
+
+        <div class="glowing-card">
+            <h2>Achievements</h2>
+            <p>
+                Dhoni's leadership was instrumental in India winning the 2007 T20 World Cup, the 2011 ICC World Cup, and the 2013 ICC Champions Trophy. Under his captaincy, India also reached the number one spot in the ICC Test rankings. His individual records include the most wins by an Indian captain in ODIs and T20Is, and his iconic "helicopter shot" has become legendary in cricket lore.
+            </p>
+        </div>
+
+        <div class="gallery">
+            <div class="gallery-card">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.dQoGoZSE0AGTLblNkk5wgAHaHl&pid=Api&P=0&h=220" alt="Image 1">
+            </div>
+            <div class="gallery-card">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.LvngXQSxp5zTvB0lgeytbAHaEK&pid=Api&P=0&h=220 alt="Image 2">
+            </div>
+            <div class="gallery-card">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.rREqB8drSfGPk3whERW7XQHaFm&pid=Api&P=0&h=220" alt="Image 3">
+            </div>
+            <div class="gallery-card">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.7heBXR4nsc3J43-Lu8AmDQHaE8&pid=Api&P=0&h=220" alt="Image 4">
+            </div>
+            <div class="gallery-card">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.dYwDpV722Ab361NpfijbBAHaKR&pid=Api&P=0&h=220" alt="Image 5">
+            </div>
+        </div>
+
+        
+        <div class="glowing-card">
+            <h2>Legacy</h2>
+            <p>
+                MS Dhoni’s legacy transcends the cricket field. He redefined what it means to be a captain, emphasizing calmness, strategic thinking, and leading by example. Dhoni's ability to stay composed under pressure became a hallmark of his career, earning him the title "Captain Cool."
+            </p>
+            <p>
+                His influence is evident in the new generation of cricketers who emulate his leadership style, work ethic, and innovative approach to the game. Beyond his records and trophies, Dhoni’s humility, dedication, and sportsmanship have left an indelible mark on the sport. He continues to inspire millions, not just as a player but as a leader who revolutionized Indian cricket.
+            </p>
+        </div>
+        
+    </div>
+</body>
+</html>
